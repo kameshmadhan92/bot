@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chatbot in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="script.js" defer></script>
+    <style>
+      a:link, a:visited {
+        background-color: #000000;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: red;
+      }
+
+
+
+      /* General styles for the Career Options section */
+.coun {
+  padding: 40px 20px;
+  background-color: #524343;
+  text-align: center;
+}
+
+.coun h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.coun p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Style for the grid container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Style for each card */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 280px; /* Ensuring cards are not too wide */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the "USE CHATBOT" link */
+a {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ff4747;
+}
+
+a:active {
+  background-color: #d43535;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <div class="logo">Career Guidance</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#options">Career Options</a>
+            <a href="#footer-links">Contact Us</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="chatwithcoun.html">career guidance Counsellor</a>
+        </nav>
+    </header>
+    
+    <section class="hero" id="hero">
+
+        <h1><b>Discover Your Path</b></h1>
+        <p><b>Your guide to the best career options after 12th grade</b></p>
+        <a href="#options" class="cta">Explore Careers</a>
+        
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <img src="im1.png"> 
+        <p>
+          
+            At Career Guidance, we aim to empower students with the right information and tools to choose a fulfilling career path. Whether you're interested in engineering, medicine, arts, or commerce, we provide insights and resources to help you make informed decisions about your future.
+        </p>
+    </section>
+    
+    <section class="career-options" id="options">
+      <h2>Career Options</h2>
+      <div class="grid">
+          <div class="card">
+              <img src="en.png" alt="Engineering Image">
+              <h3>Engineering</h3>
+              <p>Explore top engineering courses after 12th like Civil, Mechanical, and Computer Science Engineering. Choose from integrated, undergraduate, or diploma options to align with your career goals.</p>
+              <a href="eng.docx" target="_blank">Learn More</a>
+          </div>
+          <div class="card">
+              <img src="med.jpg" alt="Medicine Image">
+              <h3>Medicine</h3>
+              <p>Discover a path to becoming a doctor, surgeon, or medical researcher. Learn about MBBS, BDS, and other healthcare programs after 12th.</p>
+              <a href="eng.docx" target="_blank">Learn More</a>
+          </div>
+          <div class="card">
+              <img src="arts.jpg" alt="Arts & Humanities Image">
+              <h3>Arts & Humanities</h3>
+              <p>Explore courses in literature, history, sociology, and more to unlock creativity and understand cultural dynamics.</p>
+              <a href="eng.docx" target="_blank">Learn More</a>
+          </div>
+          <div class="card">
+              <img src="com.jpg" alt="Commerce Image">
+              <h3>Commerce</h3>
+              <p>Dive into finance, business management, and economics courses to shape the future of the economy.</p>
+              <a href="eng.docx" target="_blank">Learn More</a>
+          </div>
+      </div>
+      <br>
+      <a href="chatbot.html" target="_blank">USE CHATBOT</a>
+  </section>
+  
+  
+  <!--career guidance Counsellor-->
+
+  <section class="coun" id="options"> 
+    <h2>Our career guidance Counsellor</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="coun.png" alt="Engineering Image">
+            <h3>Engineering</h3>
+            <p>Innovate and build the future with a career in technology.</p>
+        </div>
+        <div class="card">
+            <img src="doc.jpg" alt="Medicine Image">
+            <h3>Medicine</h3>
+            <p>Save lives and bring hope as a healthcare professional.</p>
+        </div>
+        <div class="card">
+            <img src="coun.png" alt="Arts & Humanities Image">
+            <h3>Arts </h3>
+            <p>Unlock creativity and explore cultural dynamics.</p>
+        </div>
+        <div class="card">
+            <img src="com coun.jpg" alt="Commerce Image">
+            <h3>Commerce</h3>
+            <p>Shape the economy with skills in finance and business.</p>
+        </div>
+    </div>
+    <br>
+    <a href="chatwithcoun.html" target="_blank">Contact  Counsellor </a>
+  </section>
+    
+  
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-columns">
+      <!-- About Section -->
+      <div class="footer-column about">
+        <h3>About</h3>
+        <p>At Career Guidance, we aim to empower students with the right information and tools to choose a fulfilling career path. Whether you're interested in engineering, medicine, arts, or commerce, we provide insights and resources to help you make informed decisions about your future.</p>
+        <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+        <p>Phone: <a href="tel:+239239210">+2 392 3929 210</a></p>
+        <p>Email: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
+        <form action="#" class="newsletter">
+          <input type="email" placeholder="Enter email address" />
+          <button type="submit">&#9658;</button>
+        </form>
+      </div>
+
+      <!-- Information Section -->
+      <div class="footer-column information">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#help">Help & Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Instagram Section -->
+      <div class="footer-column instagram">
+        <h3>Instagram</h3>
+        <div class="instagram-gallery">
+          <img src="im1.png" alt="Instagram Image">
+          <img src="im1.png" alt="Instagram Image">
+          <img src="im1.png" alt="Instagram Image">
+          <img src="im1.png" alt="Instagram Image">
+          <img src="im1.png" alt="Instagram Image">
+          <img src="im1.png" alt="Instagram Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; Guidance 2025<span style="color: #ff4081">&#9829;</span>  </p>
+    </div>
+  </div>
+</footer>
+
+
+    <button class="chatbot-toggler">
+     
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br />How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+    <script>
+      
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+        });
+    </script>
+  </body>
+</html>

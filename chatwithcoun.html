@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .form-header {
+      margin-bottom: 20px;
+    }
+
+    .form-header img {
+      width: 50px;
+    }
+
+    .form-header h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #008a5a;
+    }
+
+    #message {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/kameshkarnan2@gmail.com" method="POST">
+
+
+  <div class="form-container">
+    <div class="form-header">
+      <img src="cover.jpg" alt="Gym Icon">
+      <h2>career guidance Counsellor</h2>
+    </div>
+    <form id="gymRegistrationForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="12th course">12th course</label>
+      <select id="12th course" name="12th course" required>
+
+        <option value="" disabled selected>Select your course</option>
+        <option value="Engineering">Computer science</option>
+        <option value="ARTS">Biology</option>
+        <option value="Medicine">Accounts</option>
+       
+      </select>
+
+      <label for="percentage">Percentage</label>
+<input type="number" id="percentage" name="percentage" placeholder="Enter your percentage" required min="0" max="100">
+
+
+      <button type="submit">Submit</button>
+      <p id="message"></p>
+    </form>
+  </div>
+</form>
+  <script>
+    document.getElementById('chatbot').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const messageElement = document.getElementById('message');
+      messageElement.style.color = "green";
+      messageElement.textContent = "Registration successful!";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
